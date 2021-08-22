@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Ante cualquier duda comuniquese atraves de nuesstra seccion Contacto"> 
+    <meta name="keywords"
+    content="Cine,Cinefilos,Contacto">
+    <!--Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
+    <link rel="font" href="./assets/starWars.ttf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/79853b14e2.js" crossorigin="anonymous"></script>
+    <!-- Efectos --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/hamburger.js"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg header__navbar">
+        <div class="container-fluid">
+        <a class="navbar-brand navbar__texto" href="../index.html"><img src="../assets/icon2.png" alt="iconIndex" id="Icon" class="animate__animated animate__zoomIn">MovieFan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="nav-container">
+                <div class="toggle-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link"  href="estrenos.html">Estrenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="top.html">TOP 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle cas" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#suspenso">Suspenso</a></li>
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#accion">Accion</a></li>
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#drama">Drama</a></li>
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#terror">Terror</a></li>
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#comedia">Comedia</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+<form class="form__contactForm">
+    <h1>Formulario de Contacto</h1>
+    <div>
+    <label for="firstname">Nombre:</label><br>
+    <input type="text" placeholder="Ej: Juan" required><br>
+    <label for="lastname">Apellido:</label><br>
+    <input type="text" placeholder="Ej: Ramirez" required><br>
+    <label for="phone">Telefono:</label><br>
+    <input type="tel" placeholder="Ej: 15-2425-5682" required><br>
+    <label for="email">Correo Electronico:</label><br>
+    <input type="email" placeholder="Ej: xxxx@gmail.com"name="email" required><br>
+    <label for="motive">Seleccione el motivo de su contacto</label><br>
+    <select name="motive">
+        <option value="EC">Errores en la pagina</option>
+        <option value="MP">Consultas Sugerencias</option>
+        <option value="O">Otros</option>
+    </select> <br>
+    <label for="datebirth">Ingrese su fecha de nacimiento:</label><br>
+    <input type="date" id="datebirth" name="datemax"><br><br>
+    <label for="message"></label>Por favor redacte su consulta:<br>
+    <textarea name="message" rows="10" cols="30" style="resize: none;">
+    </textarea> 
+    <div>Acepta términos y condiciones</div>
+    <input type="checkbox" name="acepta" value="1" />
+    </div>
+    <input type="reset" value="Limpiar Formulario">
+    <input type="submit" name="" id="" value="Enviar"><br>
+</form>
+<footer>
+    <h4 class="footer__title">Seguinos en nuestras redes</h4>
+    <ul>
+        <li><i class='fab fa-twitter-square' ></i>Twitter/MovieFan</li>
+        <li><i class='fab fa-facebook'></i>Facebook/MovieFan</li>
+        <li><i class='fab fa-instagram'></i>Instagram/MovieFan</MovieFan/li>
+        <li><i class='fab fa-twitch'></i>Twitch/MovieFan</li>
+    </ul>
+</footer>
+</body>
+<script src="../js/bootstrap.min.js"></script>
+</html>
+
+

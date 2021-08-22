@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Descubra lo mejor del cine, próximos estrenos o lo que más le interese en su categoría"> 
+    <meta name="keywords"
+    content="Cine,Cinefilos,Peliculas,Cartelera">
+    <!--Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
+    <link rel="font" href="./assets/starWars.ttf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/79853b14e2.js" crossorigin="anonymous"></script>
+    <!-- Efectos --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="csshake.min.css">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/hamburger.js"></script>
+    <title>MovieFan</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg header__navbar">
+        <div class="container-fluid">
+        <a class="navbar-brand navbar__texto" href="index.html"><img src="assets/icon2.png" alt="iconIndex" id="Navbar__Icon" class="animate__animated animate__zoomIn">MovieFan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="nav-container">
+                <div class="toggle-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link"  href="./Pages/estrenos.html">Estrenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/top.html">TOP 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/Nosotros.html">Nosotros</a>
+                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle cas" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#suspenso">Suspenso</a></li>
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#accion">Accion</a></li>
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#drama">Drama</a></li>
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#terror">Terror</a></li>
+                    <li><a class="dropdown-item" href="/Pages/categorias.html#comedia">Comedia</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- CARROUSEL -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner position-relative">
+                <div class="carousel-item" data-bs-interval="3500">
+                    <img src="https://media.revistagq.com/photos/5eb3e4903f0f1d1f6dbca7fa/master/pass/estrenos-cine-2020.jpeg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block text-white bg-dark border border-warning border-2 rounded-pill">
+                    <h4>ULTIMOS ESTRENOS</h4>
+                    <p>Visita nuestra seccion de estrenos para ver la critica a las novedades del mundo del cine.</p>
+                </div>
+                </div>
+            <div class="carousel-item" data-bs-interval="3500">
+                <img src="https://www.eltiempo.com/contenido///entretenimiento/cine-y-tv/IMAGEN/IMAGEN-16473693-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-white bg-dark border border-warning border-2 rounded-pill">
+                    <h4>CLASICOS DE CLASICOS!</h4>
+                    <p>Si sos un verdadero CINEFILO te recomendamos ver nuestro TOP 5 que todo fanatico de cine tendria que ver!</p>
+                </div>
+            </div>
+            <div class="carousel-item active"  data-bs-interval="3500">
+                <img src="https://media.revistagq.com/photos/604b2f499fc97c95e82c1c14/master/pass/2101913.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-white bg-dark border border-warning border-2 rounded-pill">
+                    <h4>BIENVENIDO!</h4>
+                    <p>A nuestro pequeño rincon de criticas de cine,analisis de viejos clasicos y pequeñas reseñas de los futuros estrenos!</br>
+                        Que disfrutes tu visita!
+                    </p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    <!-- CONTENIDO -->
+        <h2 class="focus-in-contract-bck">Proximos Estrenos</h2>
+    <section class="indexContainer">
+        <article class="indexContainer__indexArticle">
+            <h4 class="indexArticle__mainTitle">A Quiet Place 2 (John Krasinki)- 16 de Junio</h4>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/un-lugar-tranquilo-2-fotogramas-1623756451.jpg" alt="aQuietPlace" >
+            <p class="indexArticle__description">La familia Abbot debe enfrentarse a los peligros del mundo exterior mientras lucha en silencio por sobrevivir. Forzados a aventurarse en lo desconocido, pronto se dan cuenta de que aquellas criaturas no son la única amenaza.    
+            </p>
+        </article>
+        <article class="indexContainer__indexArticle">
+            <h4 class="indexArticle__mainTitle"> ‘Fast And Furious 9’ (Justin Lin) - 2 de julio </h4>
+            <img src=https://i.blogs.es/4b1379/fast-furious-9-cartel/840_560.jpeg alt="fastAndFurious9">
+            <p class="indexArticle__description">Toretto (Vin Diesel) vuelve con Letty (Michelle Rodríguez) y el resto del equipo para impedir un complot a escala mundial liderado por el asesino Jakob (John Cena).      
+            </p>     
+        </article>
+        <article class="indexContainer__indexArticle">
+            <h4 class="indexArticle__mainTitle">Jungle Cruise ( Jaume Collet-Serra)- 30 de Julio</h4>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jungle-cruise-jpgc-1537031155.jpg" alt="jungleCruise">
+            <p class="indexArticle__description">Ambientada en la década de 1930 durante la Gran Depresión, un capitán de un barco llamado Frank lleva a una científica y a su hermano en una misión en una jungla para encontrar el Árbol de la Vida que se cree que posee poderes curativo.
+            </p>
+        </article>
+        <article class="indexContainer__indexArticle">
+            <h4 class="indexArticle__mainTitle">Uncharted ( Ruben Fleischer)- 18 de Febrero de 2022</h4>
+            <img src=https://pbs.twimg.com/media/EsQ5Ps7W8AUhoyt.jpg alt="Uncharted" loading="lazy">
+            <p class="indexArticle__description">La esperada adaptación del videojuego por fin llegará a la gran pantalla en 2022 después de sufrir inumerables retrasos. Estará dirigida por Ruben Fleischer (Zombieland y Venom) y protagonizada por Tom Holland como Nathan Drake, Mark Wahlberg como Sully y Antonio Banderas. La película se ha rodado en parte en España.
+            </p>
+        </article>
+        <article class="indexContainer__indexArticle">
+            <h4 class="indexArticle__mainTitle">Morbius ( Daniel Espinosa)- 30 de Julio 2022</h4>
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/01/morbius-2210579.jpg?itok=0RhprQDt" alt="morbius" loading="lazy">
+            <p class="indexArticle__description">El bioquímico Michael Morbius intenta curarse a sí mismo de una extraña enfermedad de la sangre, pero sin darse cuenta se infecta con una forma de vampirismo.
+            </p>
+        </article>
+        <article class="indexContainer__indexArticle">
+            <h4 class="indexArticle__mainTitle">Avatar 2 ( James Cameron)- 16 de Diciembre 2022</h4>
+            <img src=https://es.web.img3.acsta.net/pictures/20/06/17/11/47/3296884.jpg alt="avatar2" loading="lazy">
+            <p class="indexArticle__description">La esperada secuela de Avatar se está rodando con tecnología submarina y con James Cameron detrás de las cámaras. Volveremos a ver en Pandora a Sam Worthington, Zoe Saldaña, Cliff Curtis y Sigourney Weaver además de añadir a Kate Winslet al reparto.
+            </p>
+        </article>
+    </section>
+<footer>
+<h4 class="footer__title">Seguinos en nuestras redes</h4>
+<ul>
+    <li><i class='fab fa-twitter-square'></i>Twitter/MovieFan</li>
+    <li><i class='fab fa-facebook'></i>Facebook/MovieFan</li>
+    <li><i class='fab fa-instagram'></i>Instagram/MovieFan</MovieFan/li>
+    <li><i class='fab fa-twitch'></i>Twitch/MovieFan</li>
+</ul>
+</footer>
+</body>
+<script src="js/bootstrap.min.js"></script>
+</html>
