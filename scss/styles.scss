@@ -148,10 +148,20 @@ footer{
     .footer__title{
         font-size: 2rem;
         font-family: StarWars;
+        text-align: center;
+    }
+
+    .footer__container{
+        display: flex;
+        flex-direction: row;
     }
     ul li
-    {
-        display: flex;
+    {   
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        display: grid;
         text-align: center;
         a{
             text-decoration: none;
@@ -161,15 +171,11 @@ footer{
             text-decoration: none;
         }
         a:hover{
-            color:grey
+            color:grey;
+            font-size:45px;
+            transition: 1s;
         }
     }
-}
-
-.footer_icons{
-    font-size: 24px; 
-    padding-top: 5px;
-    padding-right:5px; 
 }
 
 .footer_usClass{
@@ -181,13 +187,15 @@ footer{
 @each $icon in fa-twitter-square,fa-facebook,fa-instagram,fa-twitch{
     .#{$icon}{
         width:50px;
-        transition: width 2s;
+        transition: width 5s;
         transition-timing-function: linear;
-        transition:transform 2s;
+        transition:transform 1s;
         
     }
     .#{$icon}:hover{
         transform: rotate(-360deg);
+        
+        
     }
 }
 $redes:(    
@@ -208,6 +216,7 @@ $redes:(
 form{
     text-align: center;
     color:$white;
+    margin-bottom: 20px;
 }
 
 .form__contactForm{
