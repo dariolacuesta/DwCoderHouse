@@ -82,12 +82,6 @@ h2 {
 }
 
 .indexContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 10px;
-  grid-column-gap: 5px;
-  grid-area: articles;
   justify-items: center;
 }
 
@@ -95,23 +89,26 @@ h2 {
   color: black;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
-  max-height: 200px;
+  margin-top: 5px;
 }
 
-article {
-  margin-left: 15px;
-  margin-right: 15px;
+.indexContainer__indexArticle {
   text-align: center;
   height: auto;
   border-style: groove;
   background-color: white;
+  perspective: 1000px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
-article img {
+.indexContainer__indexArticle img {
   height: 250px;
   border-radius: 15%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
+  width: 250px;
   box-shadow: 10px 5px 5px black;
 }
 
@@ -119,14 +116,6 @@ article img {
   font-size: 1.2rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-transform: uppercase;
-}
-
-.indexContainer__indexArticle {
-  width: 100%;
-  perspective: 1000px;
-  display: flex;
-  position: relative;
-  flex-direction: column;
 }
 
 /* Footer */
@@ -164,11 +153,6 @@ footer ul li a:hover {
   color: grey;
   font-size: 45px;
   transition: 1s;
-}
-
-.footer_usClass {
-  position: absolute;
-  bottom: 0;
 }
 
 .fa-twitter-square {
@@ -254,24 +238,13 @@ form {
 }
 
 /* Categories */
-.mainContent {
-  justify-content: center;
-  grid-area: articles;
-}
-
-.itemContent {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  position: relative;
-}
-
 .itemContent__itemArticle {
-  width: 100%;
-  perspective: 1000px;
   display: flex;
-  position: relative;
+  text-align: center;
+  border-style: groove;
+  background-color: white;
   flex-direction: column;
+  position: relative;
 }
 .itemContent__itemArticle h4 {
   font-family: "Oswald", sans-serif;
@@ -279,17 +252,12 @@ form {
 .itemContent__itemArticle img {
   height: 200px;
   width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .itemContent__itemArticle p {
   margin-top: 5px;
-  flex-grow: 1;
-}
-.itemContent__itemArticle button {
-  height: 50px;
-  width: 100px;
-  margin-left: 0%;
-  margin-top: 40px;
-  position: relative;
+  margin-bottom: 100px;
 }
 .itemContent__itemArticle .itemArticle__score {
   position: relative;
@@ -297,9 +265,15 @@ form {
   left: 0;
 }
 
+.btn__resp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /* Estrenos */
 .mainPremiereContent {
-  grid-area: articles;
   display: flex;
   flex-direction: column;
 }
@@ -432,25 +406,6 @@ form {
 
 /* Responsive Mobile*/
 @media only screen and (max-width: 767px) {
-  .indexContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    margin-right: 15px;
-    justify-content: start;
-  }
-
-  .header__navbar {
-    display: flex;
-    justify-content: center;
-  }
-  .header__navbar ul li {
-    width: 100%;
-    display: flex;
-  }
-  .header__navbar ul li ul a {
-    display: none;
-  }
-
   #Navbar__Icon {
     display: none;
   }
@@ -474,28 +429,18 @@ form {
   #carouselExampleCaptions {
     display: none;
   }
+
+  #navbarNavDropdown ul li a {
+    text-align: center;
+    margin: auto;
+  }
+
+  .focus-in-contract-bck {
+    text-align: center;
+  }
 }
 /*Responsive Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .indexContainer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-right: 15px;
-    justify-content: start;
-  }
-
-  .header__navbar {
-    display: flex;
-    justify-content: center;
-  }
-  .header__navbar ul li {
-    width: 100%;
-    display: flex;
-  }
-  .header__navbar ul li ul a {
-    display: none;
-  }
-
   #Navbar__Icon {
     display: none;
   }
@@ -514,14 +459,6 @@ form {
   .flip-box {
     width: 100%;
     margin-bottom: 0;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .indexContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: start;
   }
 }
 /* Animations */
@@ -726,7 +663,8 @@ form {
   font-weight: bold;
   text-align: justify;
   position: absolute;
-  animation: scroll 120s linear forwards;
+  animation: scroll 60s linear forwards;
+  animation-iteration-count: infinite;
 }
 .scroll-text h1 {
   text-align: center;
@@ -738,7 +676,7 @@ form {
     transform: translateZ(0) rotateX(20deg);
   }
   to {
-    top: -7500px;
+    top: -3500px;
     transform: translateZ(-2500px) rotateX(21deg);
   }
 }
